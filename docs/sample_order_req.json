@@ -1,0 +1,81 @@
+ {
+   "cid": "test",
+   "tripType": 1,
+   "sessionId": "S12345",
+   "routing": {
+     "data": "SL516_20170221_E_Y#1660_181#2_9_1#1_CN,US,UK,AU,DK#12_59",
+     "fromSegments": [{
+       "carrier": "SL",
+       "flightNumber": "SL516",
+       "depAirport": "DMK",
+       "depTime": "201702211550",
+       "arrAirport": "CNX",
+       "arrTime": "201702211705",
+       "stopCities": "",
+       "codeShare": false,
+       "cabin": "E",
+       "aircraftCode": "320"
+     }],
+     "retSegments": []
+   },
+   "passengers": [{
+       "name": "Marcus/Tom",
+       "ageType": 0,
+       "birthday": "19740225",
+       "gender": "M",
+       "cardType": "PP",
+       "cardNum": "G756789",
+       "cardExpired": "20200101",
+       "cardIssuePlace": "CN",
+       "nationality": "CN",
+       "mobile": "13800000000",
+       "airlineCode": "SL",
+       "airlineCardNo": "SL12345A"
+     },
+     {
+       "name": "Marcus/Jack",
+       "ageType": 1,
+       "birthday": "20060225",
+       "gender": "M",
+       "cardType": "PP",
+       "cardNum": "G756790",
+       "cardExpired": "20200101",
+       "cardIssuePlace": "CN",
+       "nationality": "CN",
+       "mobile": "13800138000",
+       "airlineCode": "SL",
+       "airlineCardNo": "SL12345B"
+     }
+   ],
+   "contact": {
+     "name": "Marcus/Tom",
+     "address": "xxxx spring valley road",
+     "postcode": "12345",
+     "email": "",
+     "mobile": "13800000000"
+   },
+   "passengerAuxes": [{
+     "name": "Marcus/Tom",
+     "segment": {
+       "flightNumber": "SL516",
+       "depAirport": "DMK",
+       "depTime": "201702211550",
+       "arrAirport": "CNX",
+       "cabin": "E"
+     },
+     "productItem": {
+       "outerId": "TGPEKBKK2017M6M7001",
+       "productName": "Y 舱 32 公斤行李额",
+       "productType": 4,
+       "saleType": 1,
+       "auxFareSource": 1,
+       "onlinePrice": 10000,
+       "baggage": {
+         "weight": 32,
+         "pc": 1,
+         "isAllWeight": true
+       }
+     }
+   }],
+   "bookNum": 1
+ }

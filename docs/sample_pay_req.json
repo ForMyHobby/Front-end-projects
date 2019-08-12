@@ -1,0 +1,23 @@
+{
+    "cid": "test",
+    "tripType": 1,
+    "sessionId": "S12345",
+    "orderNo": "Ticket-AAA-2013031209-0001",
+    "pnrCode": "XXXXXX",
+    "routing": {
+        "data": "SL516_20170221_E_Y#1660_181#2_9_1#1_CN,US,UK,AU,DK#12_59",
+        "fromSegments": [{
+            "carrier": "SL",
+            "flightNumber": "SL516",
+            "depAirport": "DMK",
+            "depTime": "201702211550",
+            "arrAirport": "CNX",
+            "arrTime": "201702211705",
+            "stopCities": "",
+            "codeShare": false,
+            "cabin": "E",
+            "aircraftCode": "320"
+        }],
+        "retSegments": []
+    }
+}

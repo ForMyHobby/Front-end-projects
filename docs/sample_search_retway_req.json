@@ -1,0 +1,11 @@
+{
+  "cid": "test",
+  "tripType": 2,
+  "fromCity": "BJS",
+  "toCity": "HKG",
+  "fromDate": "20170219",
+  "retDate": "20170228",
+  "adultNumber": 2,
+  "childNumber": 1,
+  "infantNumber": 1
+}

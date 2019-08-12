@@ -1,0 +1,10 @@
+{
+  "cid": "test",
+  "tripType": 1,
+  "fromCity": "BKK",
+  "toCity": "CNX",
+  "fromDate": "20180221",
+  "adultNumber": 2,
+  "childNumber": 1,
+  "infantNumber": 1
+}
