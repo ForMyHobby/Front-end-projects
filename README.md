@@ -35,7 +35,7 @@ eslint @5.16.0         （一个插件化的javascript代码检测工具。）
 选择相应航班。点击订票按钮进入fillinfo界面的同时，
 把搜索条件和选定航班信息传递给fillinfo界面。
 
-![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/images/search.PNG)
+![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/screenshot/search.PNG)
 
 ### 用户信息填写界面
 
@@ -48,7 +48,7 @@ eslint @5.16.0         （一个插件化的javascript代码检测工具。）
 同时跳转到支付界面，把用户支付所需的信息挂载到支付页面的url上（支付功能尚未实现）
 ```
 
-![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/images/fillinfo.PNG)
+![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/screenshot/fillinfo.PNG)
 
 
 ### 订单页面
@@ -61,11 +61,11 @@ eslint @5.16.0         （一个插件化的javascript代码检测工具。）
 
 订单列表页面
 
-![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/images/order-list.PNG)
+![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/screenshot/order-list.PNG)
 
 订单详情
 
-![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/images/order-detail.PNG)
+![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/screenshot/order-detail.PNG)
 
 
 ## 业务实现
@@ -86,7 +86,7 @@ eslint @5.16.0         （一个插件化的javascript代码检测工具。）
 
 ### 航班信息的显示
 
-![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/images/searche_big.PNG)
+![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/screenshot/searche_big.PNG)
 
 在search页面中调用 api.js中的doSearch函数
 api.js中的dosearch函数会获取来自 docs文件夹下sample_order_list.json中的数据
@@ -100,11 +100,11 @@ trip_price和trip_top 分别用于显示每个航程的 价格信息和  航班�
 通过从本地的json文件中去获取数据，把获取的数据和element ui配合使用，实现数据的显示
 ```
 航班详细信息
-![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/images/search_trip_top.PNG)
+![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/screenshot/search_trip_top.PNG)
 
 航班价格信息
 
-![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/images/search_trip_price.PNG)
+![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/screenshot/search_trip_price.PNG)
 
 ```
  <ticket
@@ -128,11 +128,11 @@ trip_price和trip_top 分别用于显示每个航程的 价格信息和  航班�
 
 单程
 
-![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/images/searche_condition_1.PNG)
+![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/screenshot/searche_condition_1.PNG)
 
 往返
 
-![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/images/search_condition_2.PNG)
+![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/screenshot/search_condition_2.PNG)
 
 ```
 使用 element ui的 el-autocomplete可带输入建议的输入框组件，
@@ -291,11 +291,11 @@ rule组件（退改签信息显示），baggage组件（乘客行李信息显示
 
 乘客行李信息
 
-![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/images/fillinfo_baggage.PNG)
+![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/screenshot/fillinfo_baggage.PNG)
 
 改退签规则
 
-![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/images/fillinfo_rule.PNG)
+![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/screenshot/fillinfo_rule.PNG)
 
 它们的数据来源都是本地的 sample_revalidate_resp.json文件
 
@@ -305,7 +305,7 @@ rule组件（退改签信息显示），baggage组件（乘客行李信息显示
 
 ### 使用awsome图标库，配合element ui组件进行使用。美化界面
 
-![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/images/fillinfo_passenger_fee.PNG)
+![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/screenshot/fillinfo_passenger_fee.PNG)
 
 ```
 <el-col :span="12">
@@ -336,7 +336,7 @@ rule组件（退改签信息显示），baggage组件（乘客行李信息显示
  通过给订单列表中的订单号使用 router-link组件，实现点击订单号进行页面跳转。
  在表格中，给表格的某一列内容添加一个组件或按钮。使用slot-scope属性
  
- ![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/images/order_list_order.PNG)
+ ![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/screenshot/order_list_order.PNG)
  
  ```
   <template slot-scope="scope">
@@ -373,7 +373,7 @@ rule组件，baggage组件
 order_passengerInfo(乘客信息显示组件)，
 ```
 
-![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/images/order_detail_passenger.PNG)
+![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/screenshot/order_detail_passenger.PNG)
 
 
 ## 项目运行
