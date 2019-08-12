@@ -27,6 +27,66 @@ vue-router @3.0.1      （Vue Router 是 Vue.js 官方的路由管理器）
 vuex @3.1.1            （一个专为 Vue.js 应用程序开发的状态管理模式）
 eslint @5.16.0         （一个插件化的javascript代码检测工具。）
 ```
+## 代码目录
+```
++-- build/                                  ---打包的文件目录
++-- config/                                 ---npm run eject 后的配置文件目录
++-- node_modules/                           ---npm下载文件目录
++-- docs/                                   ---存放本地的json文件
++-- css/                                    --- awsome引用文件  
++-- public/                                 
+|   --- index.html							            ---首页入口html文件
++-- src/                                    ---主要代码 
+|   +-- common                              
+|        +-- api.js                         --- 对本地json数据进行获取的js文件
+|   +-- components                     ---所有可复用组件，公用组件
+|   |    +-- baggage                       ---行李信息组件
+|   |    |    --- ...   
+|   |    +-- contact_information           --- 填写乘客的联系人信息
+|   |    |    --- ...   
+|   |    +-- order_information             ---订单信息
+|   |    |    --- ...   
+|   |    +-- order_passengerInfo           ---order_detail页面中，订单中的乘客信息
+|   |    |    --- ...   
+|   |    +-- passanger_info_card           ---fill_info页面，填写乘客信息的组件
+|   |    |    --- ...   
+|   |    +-- passenger_fee                 --- 显示乘客的航程费用
+|   |    |    --- ...   
+|   |    +-- rule                          ---退改签规则
+|   |    |    --- ...   
+|   |    +-- ticket                        ---显示用户给定搜索条件下，所有的航班信息
+|   |    |    --- ...   
+
+|   |    +-- trip_price                    --- 航班信息中的，单个成人的机票价格。
+|   |    |    --- ...   
+|   |    +-- trip_top                      ---航班信息中的航程信息：出发，到达地点，机场，时间
+|   +-- layouts                              
+|   |    +-- admin
+|   +-- less                               --- 
+|   +-- pages                     ---所有的页面
+|   |    +-- fill_info                         ---乘客信息填写界面
+|   |    |    --- ...    
+|   |    +-- order_detail                      ---订单详情界面
+|   |    |    --- ...   
+|   |    +-- order_list                        ---订单列表页面
+|   |    |    --- ...   
+|   |    +-- pay                               ---用户支付界面
+|   |    |    --- ...   
+|   |    +-- search                            ---搜索界面
+|   |    |    --- ... 
+|   |    +-- user_info                         ---用户信息界面
+|   +-- router                               --- 路由相关
+|   |    +-- index.js                      --- 整个项目的路由配置
+|   --- App                             --- 组件入口文件
+--- .env                           --- 启动项目自定义端口配置文件
+--- .eslintrc.js                   --- 自定义eslint配置文件，包括增加的react jsx语法限制
+--- package.json                   --- 指定所有需要导入的包极其版本
+--- babelrc                        --- 用来设置转码的规则和插件的
+--- .eslintrc.js                   ---用来管理和检测js代码风格的工具
+--- .gitignore.js                  --- 指定git上传代码时，哪些系统自生成以及由其它文件生成的文件，不会被上传上去。
+
+```
+
 
 ## 项目业务
 
@@ -67,48 +127,6 @@ eslint @5.16.0         （一个插件化的javascript代码检测工具。）
 订单详情
 
 ![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/screenshot/order-detail.PNG)
-
-## 代码目录
-```
-+-- build/                                  ---打包的文件目录
-+-- config/                                 ---npm run eject 后的配置文件目录
-+-- node_modules/                           ---npm下载文件目录
-+-- public/                                 
-|   --- index.html							---首页入口html文件
-|   --- images							---项目图片
-+-- src/                                    ---主要代码
-|   +-- axios                               ---http请求库
-|   |    --- index.js
-|   +-- components                          ---所有可复用组件，公用组件
-|   |    +-- backtotop                      ---返回顶部组件
-|   |    |    --- ...   
-|   |    +-- chart                         ---图表组件
-|   |    |    --- ...   
-|   |    +-- taglist                      --- 标签按钮
-|   |    |    --- ...   
-|   |    +-- map                      ---腾讯地图
-|   |    |    --- ...   
-|   |    +-- wysiwyg                          --- 富文本
-|   +-- utils                               --- 工具文件存放目录
-|   +-- views                               --- 路由页面，对应左侧菜单栏，每一个文件夹都是一个页面
-|   +-- router                               --- 路由相关
-|   |    +-- index.js                      --- content视图区的(src/views/layout/Content.jsx)的路由配置
-|   |    |    --- ...   
-|   |    +-- menus.js                         --- 左侧菜单栏的路由配置
-|   |    |    --- ...   
-|   +-- redux                               --- 状态管理
-|   |    +-- store.js                      --- store对象
-|   |    |    --- ...   
-|   |    +-- action                         --- 所有action
-|   |    |    --- ...   
-|   |    +-- reducers                      --- 所有reducers
-|   --- App.js                              --- 组件入口文件
-|   --- index.js                            --- 项目入口文件
---- .env                                    --- 启动项目自定义端口配置文件
---- .eslintrc.js                               --- 自定义eslint配置文件，包括增加的react jsx语法限制
---- package.json                         
-```
-
 
 
 ## 业务实现
