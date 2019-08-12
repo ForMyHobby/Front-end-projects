@@ -13,6 +13,7 @@ vue2 + vuex + vue-router + webpack + ES6/7 + less + element-ui
 ```
 ## 依赖模块
 
+```
 axios @0.18.0          (一个常用的http请求库，可以实现全局请求拦截，响应拦截)
 babel-preset-env@1.7.0（是一个智能预设，可以让你使用最新的JavaScript，而无需微观管理您的目标环境需要哪些语法转换）
 core-js @2.6.5         （用于JavaScript的模块化标准库）
@@ -25,7 +26,7 @@ vue-loader @15.7.1     （解析和转换 .vue 文件，提取出其中的逻辑
 vue-router @3.0.1      （Vue Router 是 Vue.js 官方的路由管理器）
 vuex @3.1.1            （一个专为 Vue.js 应用程序开发的状态管理模式）
 eslint @5.16.0         （一个插件化的javascript代码检测工具。）
-
+```
 
 ## 项目业务
 
