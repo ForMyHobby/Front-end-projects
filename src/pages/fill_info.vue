@@ -30,7 +30,7 @@
             <span class="mark">标准服务</span>
             <div class="money">
               <span class="hilight"> {{ flight.totalPrice }} </span> {{ flight.totalPriceCurrency }}
-            </div>
+            </div>baggage
           </div>
         </div>
 
@@ -291,63 +291,21 @@ export default {
         spinner: 'el-icon-loading',
         background: 'rgb(0, 0, 0, 0.5)'
       })
-      // const ret = await doOrder(param)
       console.log('param', param)
       load.close()
       const text = '订票成功，请30分钟内付款'
       this.$alert(text, '订票成功', {
         confirmButtonText: '确定',
         callback: action => {
-          // const o = Object.assign({}, ret.data)
-          // o.tripType = this.query.tripType
           let o = {}
           o.routing = this.routing
           o.query = this.query
           const data = Base64.encode(JSON.stringify(o))
-          // this.$router.push({ path: '/order', query: { data } })
+          this.$router.push({ path: '/order', query: { data } })
           this.$router.push({ path: '/pay', query: { data } })
         }
       }
       )
-
-      // if (ret.err_code !== 0) {
-      //   const text = ret.msg
-      //   this.$alert(text, '订票失败', {
-      //     confirmButtonText: '确定',
-      //     callback: action => {
-      //       if (ret.status === 4) {
-      //         this.$router.back()
-      //       }
-      //     }
-      //   }
-      //   )
-      // } else if (ret.data.status !== 0) {
-      //   const text = this.getDoOrderErrorText(ret)
-      //   this.$alert(text, '订票失败', {
-      //     confirmButtonText: '确定',
-      //     callback: action => {
-      //       if (ret.status === 4) {
-      //         this.$router.back()
-      //       }
-      //     }
-      //   }
-      //   )
-      // } else {
-      //   const text = '订票成功，请30分钟内付款'
-      //   this.$alert(text, '订票成功', {
-      //     confirmButtonText: '确定',
-      //     callback: action => {
-      //       const o = Object.assign({}, ret.data)
-      //       o.tripType = this.query.tripType
-      //       o.routing = this.routing
-      //       o.query = this.query
-      //       const data = Base64.encode(JSON.stringify(o))
-      //       this.$router.push({ path: '/order', query: { data } })
-      //       this.$router.push({ path: '/pay', query: { data } })
-      //     }
-      //   }
-      //   )
-      // }
     },
     getDoOrderErrorText (ret) {
       switch (ret.status) {
@@ -364,8 +322,6 @@ export default {
 }
 
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 
 <style lang="less" scoped>
 .additionalInformation{

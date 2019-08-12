@@ -10,7 +10,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less" scoped>
 #app {
     font-family: PingFang-SC-Medium;
     -webkit-font-smoothing: antialiased;

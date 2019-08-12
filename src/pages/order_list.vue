@@ -281,7 +281,7 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style lang="less" scoped>
 .el-submenu{
   background-color: rgba(119,136,153,0.3);
 }

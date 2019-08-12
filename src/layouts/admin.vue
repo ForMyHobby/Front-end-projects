@@ -48,7 +48,6 @@
 </template>
 
 <script>
-// import { doGetUserInfo } from '../common/api'
 export default {
   name: 'LayoutAdmin',
   data () {
@@ -58,12 +57,6 @@ export default {
     }
   },
   async mounted () {
-    // console.log('admin', 5)
-    // const ret = await doGetUserInfo()
-    // console.log('admin', 555)
-    // this.userInformation = ret.data.user
-
-    // this.contactName = this.userInformation.contactName
   },
   methods: {
     onLoginOut () {
@@ -84,7 +77,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 .userId{
   color:white;
   width:150px;

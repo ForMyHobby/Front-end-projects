@@ -69,7 +69,7 @@ export default {
   }
 }
 </script>
-<style>
+<style lang="less" scoped>
 .flex-row{
     display:flex;
 }

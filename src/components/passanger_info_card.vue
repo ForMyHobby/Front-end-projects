@@ -145,31 +145,16 @@ export default {
         return {
           familyName: '',
           givenName: '',
-          // 乘客类型，0 成人/1 儿童/2 婴儿/-1 留学 生
           ageType: 0,
-          // 生日，格式:YYYYMMDD
           birthday: '',
-          // 乘客性别，M 男 / F 女
           gender: '',
-          // 证件号码，最大 15 个字符
           cardNum: '',
-          // 证件类型:
-          // PP - 护照
-          // GA - 港澳通行证 TW - 台湾通行证 TB - 台胞证
-          // HX -回乡证
-          // HY - 国际海员证
           cardType: '',
-          // 证件发行国家或地区，国家或地区二字码
           cardIssuePlace: '',
-          // 证件有效时间，格式:YYYYMMDD
           cardExpired: '',
-          // 乘客国籍或地区，国家或地区二字码
           nationality: '',
-          // 乘机人手机号，非必须传递
           mobile: '',
-          // 里程累计的常旅客卡号所属航司二字码 非必要
           airlineCode: '',
-          // 里程累计的常旅客卡号，可能存在数字和字母的组合 非必要
           airlineCardNo: ''
         }
       }
@@ -189,7 +174,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="less" scoped>
 h1,
 h2 {

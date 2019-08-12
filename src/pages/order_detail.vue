@@ -161,8 +161,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-
 <style lang="less" scoped>
 .el-container{
   background-color:rgba(245,245,245);
@@ -172,7 +170,6 @@ export default {
   margin-top:30px;
   margin-right:40px;
   margin-left:20px;
-  // margin-bottom: 50px;
 }
 .el-main{
   margin-top:30px;
