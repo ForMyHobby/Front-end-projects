@@ -77,10 +77,9 @@ eslint @5.16.0         （一个插件化的javascript代码检测工具。）
 |   +-- router                               --- 路由相关
 |   |    +-- index.js                      --- 整个项目的路由配置
 |   --- App                             --- 组件入口文件
---- .eslintrc.js                   --- 自定义eslint配置文件，包括增加的react jsx语法限制
 --- package.json                   --- 指定所有需要导入的包极其版本
 --- package-lock.json              --- 会描述上一次package.json更改后的确切的依赖管理树. 里面包含了唯一的版本号和相关的包信息
---- babelrc                        --- 用来设置转码的规则和插件的
+--- .babelrc                        --- 用来设置转码的规则和插件的
 --- .eslintrc.js                   ---用来管理和检测js代码风格的工具
 --- .gitignore.js                  --- 指定git上传代码时，忽略一些文件（如哪些系统自生成以及由其它文件生成的文件）。
 
