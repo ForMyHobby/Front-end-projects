@@ -35,7 +35,7 @@ eslint @5.16.0         （一个插件化的javascript代码检测工具。）
 +-- docs/                                   ---存放本地的json文件
 +-- css/                                    --- awsome引用文件  
 +-- public/                                 
-|   +-- index.html							            ---首页入口html文件
+|   +-- index.html							     ---首页入口html文件
 +-- src/                                    ---主要代码 
 |   +-- common                              
 |        +-- api.js                         --- 对本地json数据进行获取的js文件
