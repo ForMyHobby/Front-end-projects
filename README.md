@@ -9,7 +9,7 @@ axios拦截,实现本地json文件内数据的获取
 
 ## 技术栈
 ```
-vue2 + vuex + vue-router + webpack + ES6/7 + less + element-ui
+vue2 + vue-router + webpack + ES6/7 + less + element-ui
 ```
 ## 依赖模块
 
