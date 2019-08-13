@@ -220,6 +220,8 @@ this.$router.replace(this.$route.path + '?data=' + data)
 同时把获取的数据，传递给data中的相应变量。
 因为在程序自调用beforeRouteEnter函数的时候，
 组件实列还没有被创建，也就实现了data中相应变量的初始化。
+同时在其中启动搜索submit搜索函数，
+显示按照用户之前的搜索调价下的最新航班信息。
 
 ```
 beforeRouteEnter (to, from, next) {
