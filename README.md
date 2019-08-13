@@ -95,7 +95,7 @@ eslint @5.16.0         （一个插件化的javascript代码检测工具。）
 选择相应航班。点击订票按钮进入fillinfo界面的同时，
 把搜索条件和选定航班信息传递给fillinfo界面。
 
-![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/screenshot/search.PNG)
+![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/screenshot/search2.PNG)
 
 ### 用户信息填写界面
 
@@ -108,7 +108,7 @@ eslint @5.16.0         （一个插件化的javascript代码检测工具。）
 同时跳转到支付界面，把用户支付所需的信息挂载到支付页面的url上（支付功能尚未实现）
 ```
 
-![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/screenshot/fillinfo.PNG)
+![images](https://github.com/ForMyHobby/Front-end-projects/blob/master/screenshot/fillinfo2.PNG)
 
 
 ### 订单页面
