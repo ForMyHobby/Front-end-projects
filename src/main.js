@@ -3,6 +3,7 @@
 import Vue from 'vue/dist/vue.esm.js'
 import ElementUI, { MessageBox } from 'element-ui'
 import Vuex from 'vuex'
+import directive from 'element-ui/packages/popover/src/directive'
 import store from './store'
 
 import axios from 'axios'
@@ -11,6 +12,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 import './less/index.less'
 import App from './App'
 import router from './router'
+Vue.directive('popover', directive)
 Vue.use(Vuex)
 axios.defaults.headers.post['Content-Type'] = 'application/json'
 Vue.prototype.axios = axios
