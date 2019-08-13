@@ -38,7 +38,7 @@ eslint @5.16.0         （一个插件化的javascript代码检测工具。）
 |   +-- index.html							     ---首页入口html文件
 +-- src/                                    ---主要代码 
 |   +-- common                              
-|   |     +-- api.js                       --- 对本地json数据进行获取的js文件
+|   |    +-- api.js                       --- 对本地json数据进行获取的js文件
 |   +-- components                     ---所有可复用组件，公用组件
 |   |    +-- baggage                       ---行李信息组件
 |   |    |    --- ...   
